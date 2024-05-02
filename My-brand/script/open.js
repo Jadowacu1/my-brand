@@ -3,7 +3,6 @@ const blogId = params.get("id");
 console.log("Blog ID:", blogId);
 const content = document.getElementById("content");
 const image = document.getElementById("image");
-const token = localStorage.getItem("token");
 const loader = document.getElementById("loader");
 loader.style.display = "none";
 const url = `https://mybrand-backend-j767.onrender.com/api/blogs/read/${blogId}`;
