@@ -1,6 +1,6 @@
 const url = "https://mybrand-backend-j767.onrender.com/api/blogs/read";
 // Assuming data is an array of objects containing blog post information
-const token = localStorage.getItem("token");
+
 const loader = document.getElementById("loader");
 loader.style.display = "none";
 async function fetchAndRenderBlogPosts() {
