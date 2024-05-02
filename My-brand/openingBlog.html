@@ -1,0 +1,90 @@
+<script>
+ if (token == null) {
+    alert("Your Token is Expired");
+    window.location.href = "index.html";
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- <link rel="stylesheet" href="./css/about.css" /> -->
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="css/blogCards.css" />
+    <link rel="stylesheet" href="css/opening.css" />
+    <link rel="stylesheet" href="css/preloader.css">
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>JadoForge</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo">Jado <strong>Forge</strong></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="blog.html" class="active">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+    <div id="loader"></div>
+    <div class="container">
+      <section>
+        <h2 id="title"></h2>
+        <img  alt="" id="image">
+        <p id="content">
+          
+        </p>
+
+        <!-- <p>
+          The significance of classifying matter in waste segregation is
+          paramount. It not only helps in the reduction of waste sent to
+          landfills but also promotes recycling and the conservation of valuable
+          resources. In the context of high school education, teaching students
+          the importance of waste segregation can be a valuable lesson in
+          sustainable living, imparting lifelong skills for responsible waste
+          management.
+        </p>
+
+        <p>
+          In the field of high school teaching, waste generation is a
+          significant concern. Schools produce various types of waste, including
+          paper, plastic, organic materials, and more. To gain a better
+          understanding, we've created a graph illustrating the distribution of
+          waste types, which will help identify areas for improvement in our
+          waste segregation practices.
+        </p>
+      </section> -->
+      <section id="blog">
+        <!-- <h2>Sustainable School Waste Sorting Tips</h2>
+        <p>
+          Based on our research and insights from experts, we've developed a
+          suggested waste segregation scheme for high schools. This scheme
+          promotes the separation of waste into categories like recyclables,
+          non-recyclables, and organic materials. In addition, it encourages
+          students to be active participants in this process, fostering
+          environmental awareness. By implementing these best practices, we aim
+          to create a sustainable waste management system in high school
+          settings that can serve as an example for the wider community.
+        </p> -->
+        <div class="blog-paragraph"></div>
+      </section>
+    </div>
+    <script src="script/open.js"></script>
+  </body>
+</html>

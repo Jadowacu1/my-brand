@@ -1,0 +1,23 @@
+a.btn {
+  padding-left: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 25px;
+  margin-left: 86%;
+  /* margin-top: 20px; */
+  /* margin-top: 80px; */
+  font: 12px "Arial", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #01bce5;
+}
+.blogContainer {
+  width: 95%;
+  margin-left: 3%;
+  height: auto;
+  background-color: white;
+  margin-top: -20px;
+}

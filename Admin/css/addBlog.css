@@ -1,0 +1,43 @@
+.contain {
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+.panel-heading {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.panel-body {
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+}
+.form-group [type="text"] {
+  height: 30px;
+}
+
+.btn-primary {
+  background-color: #01bce5;
+  border-color: #01bce5;
+  color: white;
+  height: 30px;
+  width: 30%;
+}
+
+.btn-primary:hover {
+  background-color: #01bce5;
+  border-color: #01bce5;
+}
+
+.btn-block {
+  width: 20%;
+  margin-top: 10px;
+}

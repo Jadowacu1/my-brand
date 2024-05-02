@@ -1,0 +1,81 @@
+<script>
+  const token = localStorage.getItem("token");
+if (token == null) {
+  alert("Your Token is Expired");
+  window.location.href = "index.html";
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/preloader.css">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+        <div class="profile"><img src="images/profile.png" width="10%" /></div>
+        <div id="userName">NIYONS...</div>
+    </div>
+    </header>
+    <nav class="sidebar">
+      <div class="logo"><img src="images/logo.png" /></div>
+      <br /><br>
+      <div class="navigation">
+        <div>
+          <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard </a>
+        </div>
+        <div>
+          <a href="blogs.html"><i class="fa-solid fa-square-pen"></i></i> Blogs</a>
+        </div>
+        <div>
+          <a href="messages.html"><i class="fa-solid fa-comment-dots"></i> Messages</a>
+        </div>
+        <div>
+          <a href="users.html"><i class="fas fa-users"></i> Users</a>
+        </div>
+      </div>
+      <div class="logout">
+        <div class="extBtn">
+          <a href="logout.html" id="signout"
+            ><ion-icon name="log-out"></ion-icon><label class="text">Logout</label></a>
+        </div>
+      </div>
+    </nav>
+    <main>
+        
+        <div class="title"><i class="fas fa-home"></i> Dashboard </a></div>
+        <div class="cards">
+          <div id="loader"></div>
+            <div class="messages">
+                <div class="icon"><center><i class="fa-solid fa-comment-dots"></i></center></div>   
+               <div class="values"><label id="messageNumbers">0</label>Messages</div>
+              </div>
+              <div class="blogs">
+                <div class="icon"><center><i class="fa-solid fa-square-pen"></i></center></div>
+                <div class="values"><label id="blogNumbers">0</label>Blogs</div>
+               </div>
+        <div class="users">
+         <div class="icon"><center><i class="fas fa-users"></i></center></div>    
+        <div class="values"><label id="userNumbers">0</label>Users</div>
+        </div>
+        
+        
+    </div>
+    </main>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     <script src="script/dashboard.js"></script>
+  </body>
+</html>

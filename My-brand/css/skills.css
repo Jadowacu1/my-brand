@@ -1,0 +1,30 @@
+body{
+    font-family: roboto,sans-serif;
+}
+
+ .skills-box{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3, auto);
+  gap: 50px;
+  color: white;
+  margin-top: 100px;
+ }
+ @media screen and (min-width: 768px) and (max-width: 1024px){
+  .skills-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+    color: white;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 768px){
+  .skills-box{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 100px; 
+  }
+}
