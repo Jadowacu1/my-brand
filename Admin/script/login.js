@@ -21,6 +21,7 @@ form.addEventListener("submit", async (e) => {
       },
       body: JSON.stringify(user),
     });
+    loder.style.display = "none";
     if (response.ok) {
      
       const message = await response.json();
