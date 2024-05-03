@@ -21,14 +21,14 @@ loder.style.display = "block";
 const url =
   "https://mybrand-backend-j767.onrender.com/api/messages/viewMessages";
 const fetchFeedbacks = async () => {
-  const tasks = await fetch(url, {
+  const feedbacks = await fetch(url, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     },
   });
-  const messages = await tasks.json();
+  const messages = await feedbacks.json();
   const NumberOfMessages = messages.length;
   console.log(NumberOfMessages);
   messageNumbers.innerText = NumberOfMessages;
@@ -37,28 +37,28 @@ fetchFeedbacks();
 const url1 = "https://mybrand-backend-j767.onrender.com/api/users/viewUsers";
 
 const fetchUsers = async () => {
-  const tasks = await fetch(url1, {
+  const Users = await fetch(url1, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     },
   });
-  const users = await tasks.json();
+  const users = await Users.json();
   const NumberOfUsers = users.length;
   userNumbers.innerHTML = `<b>${NumberOfUsers}</b>`;
 };
 fetchUsers();
 const url2 = "https://mybrand-backend-j767.onrender.com/api/blogs/read";
 const fetchBlogs = async () => {
-  const tasks = await fetch(url2, {
+  const Blogs = await fetch(url2, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     },
   });
-  const blogs = await tasks.json();
+  const blogs = await Blogs.json();
   const NumberOfBlogs = blogs.length;
   blogNumbers.innerHTML = `<b>${NumberOfBlogs}</b>`;
   loder.style.display = "none";
