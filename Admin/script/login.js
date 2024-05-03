@@ -1,7 +1,7 @@
 const form = document.getElementById("login");
 const messageView = document.getElementById("message");
 const loder = document.getElementById("loader");
-console.log("hey");
+
 loder.style.display = "none";
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -34,6 +34,8 @@ form.addEventListener("submit", async (e) => {
         localStorage.setItem("token", message);
         window.location.href = "dashboard.html";
       }
+      else{
+        messageView.innerHTML = "incorrect email or password";
     } else {
       loder.style.display = "none";
       const message = await response.json();
