@@ -29,4 +29,4 @@ async function reading(url, token) {
     throw error; // You may want to handle the error or propagate it further
   }
 }
-reading(url, token);
+reading(url, tok);
