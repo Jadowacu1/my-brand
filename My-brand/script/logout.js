@@ -1,6 +1,6 @@
 // Remove token from localStorage
-localStorage.removeItem("token");
+localStorage.removeItem("client");
 
 window.location.href = "index.html";
 
-window.location.href = "index.html";
+
