@@ -37,7 +37,9 @@ form.addEventListener("submit", async (e) => {
       }
       else{
         messageView.innerHTML = "incorrect email or password";
-    } else {
+    } 
+    }
+    else {
       loder.style.display = "none";
       const message = await response.json();
       messageView.innerHTML = "incorrect email or password";
