@@ -1,6 +1,7 @@
 const form = document.getElementById("login");
 const messageView = document.getElementById("message");
 const loder = document.getElementById("loader");
+console.log("hey");
 loder.style.display = "none";
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -24,7 +25,7 @@ form.addEventListener("submit", async (e) => {
      
       const message = await response.json();
       const role = message;
-      console.log(role);
+      
       const tokenPayload = role.split(".")[1];
       const decodedToken = JSON.parse(atob(tokenPayload));
       const userRole = decodedToken.role;
