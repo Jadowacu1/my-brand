@@ -1,6 +1,6 @@
 <script>
-  const token = localStorage.getItem("client");
-  if (token == null) {
+  const tok = localStorage.getItem("client");
+  if (tok === null) {
     alert("Your Token is Expired");
     window.location.href = "index.html";
   }
