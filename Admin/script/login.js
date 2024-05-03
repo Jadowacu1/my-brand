@@ -10,7 +10,7 @@ form.addEventListener("submit", async (e) => {
     email: email,
     password: password,
   };
-  try {
+  
     const url = "https://mybrand-backend-j767.onrender.com/api/users/login";
     loder.style.display = "block";
     const response = await fetch(url, {
@@ -34,9 +34,7 @@ form.addEventListener("submit", async (e) => {
     } else {
       loder.style.display = "none";
       const message = await response.json();
-      messageView.innerHTML = message;
+      messageView.innerHTML = "incorrect email or password";
     }
-  } catch (error) {
-    // console.error(error);
-  }
+ 
 });
