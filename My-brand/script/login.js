@@ -28,12 +28,12 @@ form.addEventListener("submit", async (e) => {
       const decodedTok = JSON.parse(atob(tokenPayload));
       const role = decodedToken.role;
 
-      if (role === "client") {
+      if (role == "client") {
         window.location.href = "blog.html";
         loader.style.display = "none";
       } else {
-        const message = await response.json();
-        messageView.innerHTML = message;
+        
+        messageView.innerHTML = "incorrect Email or Password";
         loader.style.display = "none";
       }
     } else {
