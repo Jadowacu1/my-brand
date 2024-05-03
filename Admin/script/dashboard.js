@@ -28,8 +28,8 @@ const fetchFeedbacks = async () => {
       Authorization: `Bearer ${token}`,
     },
   });
-  const data = await tasks.json();
-  const NumberOfMessages = data.length;
+  const messages = await tasks.json();
+  const NumberOfMessages = messages.length;
   console.log(NumberOfMessages);
   messageNumbers.innerText = NumberOfMessages;
 };
@@ -44,8 +44,8 @@ const fetchUsers = async () => {
       Authorization: `Bearer ${token}`,
     },
   });
-  const data = await tasks.json();
-  const NumberOfUsers = data.length;
+  const users = await tasks.json();
+  const NumberOfUsers = users.length;
   userNumbers.innerHTML = `<b>${NumberOfUsers}</b>`;
 };
 fetchUsers();
@@ -58,8 +58,8 @@ const fetchBlogs = async () => {
       Authorization: `Bearer ${token}`,
     },
   });
-  const data = await tasks.json();
-  const NumberOfBlogs = data.length;
+  const blogs = await tasks.json();
+  const NumberOfBlogs = blogs.length;
   blogNumbers.innerHTML = `<b>${NumberOfBlogs}</b>`;
   loder.style.display = "none";
 };
