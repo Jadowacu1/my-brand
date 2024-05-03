@@ -24,6 +24,7 @@ form.addEventListener("submit", async (e) => {
      
       const message = await response.json();
       const role = message;
+      console.log(role);
       const tokenPayload = role.split(".")[1];
       const decodedToken = JSON.parse(atob(tokenPayload));
       const userRole = decodedToken.role;
