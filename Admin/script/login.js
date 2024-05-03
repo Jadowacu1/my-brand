@@ -21,14 +21,15 @@ form.addEventListener("submit", async (e) => {
       body: JSON.stringify(user),
     });
     if (response.ok) {
-      loder.style.display = "none";
+     
       const message = await response.json();
-      localStorage.setItem("token", message);
-      const token = localStorage.getItem("token");
-      const tokenPayload = token.split(".")[1];
+      const role = message;
+      const tokenPayload = role.split(".")[1];
       const decodedToken = JSON.parse(atob(tokenPayload));
       const userRole = decodedToken.role;
+      loder.style.display = "none";
       if (userRole === "admin") {
+        localStorage.setItem("token", message);
         window.location.href = "dashboard.html";
       }
     } else {
