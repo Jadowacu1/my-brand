@@ -25,8 +25,8 @@ form.addEventListener("submit", async (e) => {
       localStorage.setItem("client", message);
       const tok = localStorage.getItem("client");
       const tokPayload = tok.split(".")[1];
-      const decodedTok = JSON.parse(atob(tokenPayload));
-      const role = decodedToken.role;
+      const decodedTok = JSON.parse(atob(tokPayload));
+      const role = decodedTok.role;
       if (role == "client") {
         window.location.href = "blog.html";
         loader.style.display = "none";
