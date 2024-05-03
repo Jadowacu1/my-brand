@@ -23,7 +23,7 @@ form.addEventListener("submit", async (e) => {
     if (response.ok) {
       const message = await response.json();
       localStorage.setItem("token", message);
-      const token = localStorage.getItem("token");
+      const token = localStorage.getItem("client");
       const tokenPayload = token.split(".")[1];
       const decodedToken = JSON.parse(atob(tokenPayload));
       const userRole = decodedToken.role;
