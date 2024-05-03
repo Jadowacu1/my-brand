@@ -14,7 +14,7 @@ async function reading(url, token) {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${tok}`,
       },
     });
     loader.style.display = "none";
