@@ -10,7 +10,7 @@ form.addEventListener("submit", async (e) => {
     email: email,
     password: password,
   };
-  // try {
+  
     const url = "https://mybrand-backend-j767.onrender.com/api/users/login";
     loader.style.display = "block";
     const response = await fetch(url, {
@@ -39,5 +39,5 @@ form.addEventListener("submit", async (e) => {
       messageView.innerHTML = message;
       loader.style.display = "none";
     }
-  } 
+   
 });
